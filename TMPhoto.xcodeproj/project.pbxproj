@@ -10,6 +10,9 @@
 		3CBC0E8F1EA7B40700454B8B /* TMPhoto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CBC0E851EA7B40700454B8B /* TMPhoto.framework */; };
 		3CBC0E941EA7B40700454B8B /* TMPhotoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBC0E931EA7B40700454B8B /* TMPhotoTests.swift */; };
 		3CBC0E961EA7B40700454B8B /* TMPhoto.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CBC0E881EA7B40700454B8B /* TMPhoto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CBC0EA21EA7B46000454B8B /* TMPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBC0EA11EA7B46000454B8B /* TMPhoto.swift */; };
+		3CBC0EAE1EA7B92B00454B8B /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CBC0EAD1EA7B92B00454B8B /* SDWebImage.framework */; };
+		3CBC0EFC1EA7C0B700454B8B /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CBC0EFB1EA7C0B700454B8B /* RealmSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		3CBC0E8E1EA7B40700454B8B /* TMPhotoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMPhotoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CBC0E931EA7B40700454B8B /* TMPhotoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMPhotoTests.swift; sourceTree = "<group>"; };
 		3CBC0E951EA7B40700454B8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CBC0EA11EA7B46000454B8B /* TMPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMPhoto.swift; sourceTree = "<group>"; };
+		3CBC0EAD1EA7B92B00454B8B /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Food_Yom-fzvhqqgxwchwicarxconajhyaoku/Build/Products/Debug-iphonesimulator/SDWebImage.framework"; sourceTree = "<group>"; };
+		3CBC0EFB1EA7C0B700454B8B /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "../../../../Library/Developer/Xcode/DerivedData/TMTemplate-barfnvjvwrkgiygniwrkyarzlodh/Build/Products/Debug-iphonesimulator/RealmSwift.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CBC0EFC1EA7C0B700454B8B /* RealmSwift.framework in Frameworks */,
+				3CBC0EAE1EA7B92B00454B8B /* SDWebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +64,7 @@
 				3CBC0E871EA7B40700454B8B /* TMPhoto */,
 				3CBC0E921EA7B40700454B8B /* TMPhotoTests */,
 				3CBC0E861EA7B40700454B8B /* Products */,
+				3CBC0EAC1EA7B92B00454B8B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				3CBC0E881EA7B40700454B8B /* TMPhoto.h */,
+				3CBC0EA11EA7B46000454B8B /* TMPhoto.swift */,
 				3CBC0E891EA7B40700454B8B /* Info.plist */,
 			);
 			path = TMPhoto;
@@ -84,6 +94,15 @@
 				3CBC0E951EA7B40700454B8B /* Info.plist */,
 			);
 			path = TMPhotoTests;
+			sourceTree = "<group>";
+		};
+		3CBC0EAC1EA7B92B00454B8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CBC0EFB1EA7C0B700454B8B /* RealmSwift.framework */,
+				3CBC0EAD1EA7B92B00454B8B /* SDWebImage.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +168,7 @@
 					3CBC0E841EA7B40700454B8B = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = L9NJSH4CZ8;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					3CBC0E8D1EA7B40700454B8B = {
@@ -198,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CBC0EA21EA7B46000454B8B /* TMPhoto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +343,7 @@
 		3CBC0E9A1EA7B40700454B8B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = L9NJSH4CZ8;
@@ -334,6 +356,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.yomstudio.TMPhoto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +364,7 @@
 		3CBC0E9B1EA7B40700454B8B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = L9NJSH4CZ8;
@@ -360,6 +384,7 @@
 		3CBC0E9D1EA7B40700454B8B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = L9NJSH4CZ8;
 				INFOPLIST_FILE = TMPhotoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +397,7 @@
 		3CBC0E9E1EA7B40700454B8B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = L9NJSH4CZ8;
 				INFOPLIST_FILE = TMPhotoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -400,6 +426,7 @@
 				3CBC0E9B1EA7B40700454B8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3CBC0E9C1EA7B40700454B8B /* Build configuration list for PBXNativeTarget "TMPhotoTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +435,7 @@
 				3CBC0E9E1EA7B40700454B8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
