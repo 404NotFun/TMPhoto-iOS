@@ -10,10 +10,10 @@ import Foundation
 import UIKit
 import SDWebImage
 
-class TMPhoto {
-    static let shared = TMPhoto()
+public class TMPhoto {
+    public static let shared = TMPhoto()
     
-    func compress(image: UIImage, compressionQuality: CGFloat) -> UIImage {
+    public func compress(image: UIImage, compressionQuality: CGFloat) -> UIImage {
         var actualHeight        = image.size.height
         var actualWidth         = image.size.width
         let maxHeight:CGFloat   = 600.0
@@ -45,7 +45,7 @@ class TMPhoto {
         return UIImage(data: imageData!)!
     }
     
-    func compress(image: UIImage, lessThan size: Int) -> UIImage {
+    public func compress(image: UIImage, lessThan size: Int) -> UIImage {
         var imgSize = NSData(data: UIImagePNGRepresentation(image)!).length
         var newImg = image
         while imgSize > size {
@@ -55,7 +55,7 @@ class TMPhoto {
         return newImg
     }
     
-    func imagesHandler(_ success: @escaping ()->()) {
+    public func imagesHandler(_ success: @escaping ()->()) {
 //        for i in 0..<providedShopPhotos.count {
 //            // 檢查DB是否已有照片
 //            let roImage: ROImage? = ImageRealmer.sharedInstance.find(id: providedShopPhotos[i].image_public_id!)
@@ -81,12 +81,12 @@ class TMPhoto {
 //        }
     }
     
-    func downloadImage(url: String, success: @escaping (UIImage)->(), failure: @escaping (Any)->()) {
+    public func downloadImage(url: String, success: @escaping (UIImage)->(), failure: @escaping (String?)->()) {
         SDWebImageDownloader.shared().downloadImage(with: URL(string: url), options: .useNSURLCache, progress: nil, completed: {(downloadImage, error, cacheType, finished) in
             if downloadImage != nil {
                 success(downloadImage!)
             }else {
-                failure(error as Any)
+                failure(error.debugDescription)
             }
         })
     }

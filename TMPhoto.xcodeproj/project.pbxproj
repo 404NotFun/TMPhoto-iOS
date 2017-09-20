@@ -12,7 +12,6 @@
 		3CBC0E961EA7B40700454B8B /* TMPhoto.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CBC0E881EA7B40700454B8B /* TMPhoto.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3CBC0EA21EA7B46000454B8B /* TMPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBC0EA11EA7B46000454B8B /* TMPhoto.swift */; };
 		3CBC0EAE1EA7B92B00454B8B /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CBC0EAD1EA7B92B00454B8B /* SDWebImage.framework */; };
-		3CBC0EFC1EA7C0B700454B8B /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CBC0EFB1EA7C0B700454B8B /* RealmSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +41,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CBC0EFC1EA7C0B700454B8B /* RealmSwift.framework in Frameworks */,
 				3CBC0EAE1EA7B92B00454B8B /* SDWebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
